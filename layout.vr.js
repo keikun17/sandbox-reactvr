@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { AppRegistry, asset, Pano, Text, View } from 'react-vr';
+import { StyleSheet, AppRegistry, asset, Pano, Text, View } from 'react-vr';
 
 class Greeting extends Component {
   render() {
@@ -18,6 +18,17 @@ class Layout extends Component {
     // This causes call child view to have the same width.
 
     // <Pano source={{uri: 'office_lobby.jpg'}} />
+    
+    const styles = StyleSheet.create({
+      bigblue: {
+        color: 'blue',
+        fontSize: 0.4
+      },
+
+      red: {
+        color: 'red'
+      }
+    })
 
     return (
       <View>
@@ -29,6 +40,10 @@ class Layout extends Component {
         alignItems: 'stretch',
         transform: [{translate: [-1, 1, -5]}],
       }}>
+
+      <View style={{ margin: 0.1, height: 0.5, backgroundColor: 'red'}}>
+      <Text style={[ styles.bigblue, styles.red ]}>Big Red</Text>
+      </View>
 
       <View style={{ margin: 0.1, height: 0.3, backgroundColor: 'red'}}>
       <Text style={{fontSize: 0.2, textAlign: 'center'}}>Red</Text>
