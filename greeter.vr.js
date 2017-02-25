@@ -15,9 +15,9 @@ class LotsOfGreetings extends Component {
       <View>
         <Pano source={asset('chess-world.jpg')}/>
         <View style={{transform: [{translate: [0, 0, -3]}]}}>
-          <Greeting name='Rexxar' />
-          <Greeting name='Jaina' />
-          <Greeting name='Valeera' />
+          <Greeting name='Riz' />
+          <Greeting name='Kael' />
+          <Greeting name='Budz' />
         </View>
       </View>
     );
